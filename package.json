@@ -1,6 +1,6 @@
 {
   "name": "chuckwood",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "How much wood could a woodchuck chuck…",
   "main": "index.js",
   "scripts": {
@@ -12,8 +12,9 @@
     "chuck",
     "wood"
   ],
-  "author": "furf",
+  "author": "David Furfero",
   "license": "ISC",
+  "repository": "github:furf/chuckwood",
   "devDependencies": {
     "jest": "^24.8.0"
   }
