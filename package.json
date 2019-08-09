@@ -2,9 +2,15 @@
   "name": "chuckwood",
   "version": "1.0.1",
   "description": "How much wood could a woodchuck chuck…",
-  "main": "index.js",
+  "main": "dist/index.js",
   "scripts": {
-    "test": "jest"
+    "test": "jest",
+    "lint": "tslint src/**/*.ts",
+    "clean": "rimraf dist",
+    "build": "npm run clean && tsc",
+    "preversion": "npm run test && npm run lint",
+    "version": "npm run clean && npm run build && git add -A dist",
+    "postversion": "git push && git push --tags"
   },
   "keywords": [
     "Mother Goose",
@@ -16,6 +22,11 @@
   "license": "ISC",
   "repository": "github:furf/chuckwood",
   "devDependencies": {
-    "jest": "^24.8.0"
+    "@types/jest": "^24.0.17",
+    "jest": "^24.8.0",
+    "rimraf": "^2.6.3",
+    "ts-jest": "^24.0.2",
+    "tslint": "^5.18.0",
+    "typescript": "^3.5.3"
   }
 }
