@@ -5,6 +5,6 @@
  * @param {string} verb a verb
  * @return {string} a poem
  */
-export function chuck(noun: string, verb: string): string {
-  return `How much ${noun} could a ${noun}${verb} ${verb} if a ${noun}${verb} could ${verb} ${noun}?`;
+export function chuck(noun = 'wood', verb = 'chuck'): string {
+  return `How much ${noun} would a ${noun}${verb} ${verb} if a ${noun}${verb} could ${verb} ${noun}?`;
 }

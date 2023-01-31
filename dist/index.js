@@ -7,8 +7,8 @@ Object.defineProperty(exports, "__esModule", { value: true });
  * @param {string} verb a verb
  * @return {string} a poem
  */
-function chuck(noun, verb) {
-    return `How much ${noun} could a ${noun}${verb} ${verb} if a ${noun}${verb} could ${verb} ${noun}?`;
+function chuck(noun = 'wood', verb = 'chuck') {
+    return `How much ${noun} would a ${noun}${verb} ${verb} if a ${noun}${verb} could ${verb} ${noun}?`;
 }
 exports.chuck = chuck;
 //# sourceMappingURL=index.js.map

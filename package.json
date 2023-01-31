@@ -1,6 +1,6 @@
 {
   "name": "chuckwood",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "How much wood could a woodchuck chuck…",
   "main": "dist/index.js",
   "scripts": {
